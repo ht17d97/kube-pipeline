@@ -1,1 +1,14 @@
-Hello Team.
+# Sample YAML file for testing
+name: Test Configuration
+version: 1.0
+enabled: true
+servers:
+  - name: Server1
+    ip: 192.168.1.10
+    role: web
+  - name: Server2
+    ip: 192.168.1.11
+    role: database
+settings:
+  timeout: 30
+  retries: 3
