@@ -21,13 +21,13 @@ spec:
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-repo.git'
+                git 'https://github.com/ht17d97/kube-pipeline.git'
             }
         }
         stage('Deploy to Kubernetes') {
             steps {
                 container('kubectl') {
-                    sh 'kubectl apply -f deployment.yaml'
+                    sh 'kubectl apply -f httpd/k8s-deployment.yaml'
                 }
             }
         }
